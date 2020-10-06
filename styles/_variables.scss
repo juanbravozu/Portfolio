@@ -1,0 +1,11 @@
+//Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//Colors
+$purple: #7F0799;
+$red: #E63462;
+$yellow: #FAA916;

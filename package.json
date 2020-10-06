@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanbravozu/Portfolio.git"
+  },
+  "author": "Juan David Bravo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanbravozu/Portfolio/issues"
+  },
+  "homepage": "https://github.com/juanbravozu/Portfolio#readme",
+  "dependencies": {
+    "gsap": "^3.5.1"
+  },
+  "devDependencies": {
+    "sass": "^1.26.11"
+  }
+}
