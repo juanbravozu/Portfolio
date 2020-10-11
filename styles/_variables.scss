@@ -5,7 +5,86 @@
     align-items: center;
 }
 
+@mixin h3 {
+    font-family: $montserrat;
+    font-weight: $medium;
+    font-size: 24px;
+}
+
+@mixin p {
+    font-family: $poppins;
+    font-weight: $regular;
+    font-size: 18px;
+}
+
 //Colors
 $purple: #7F0799;
 $red: #E63462;
 $yellow: #FAA916;
+$black: #333333;
+$white: #FCF7FF;
+
+//Fonts
+$montserrat: 'Montserrat', sans-serif;
+$poppins: 'Poppins', sans-serif;
+
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+
+//Breakpoints
+
+
+//Columns
+.col {
+
+    &-1 {
+        width: 8.33%;
+    }
+
+    &-2 {
+        width: 16.66%;
+    }
+
+    &-3 {
+        width: 25%;
+    }
+
+    &-4 {
+        width: 33.33%;
+    }
+
+    &-5 {
+        width: 41.66%;
+    }
+
+    &-6 {
+        width: 50%;
+    }
+
+    &-7 {
+        width: 58.33%;
+    }
+
+    &-8 {
+        width: 66.66%;
+    }
+
+    &-9 {
+        width: 75%;
+    }
+
+    &-10 {
+        width: 83.33%;
+    }
+
+    &-11 {
+        width: 91.66%;
+    }
+
+    &-12 {
+        width: 100%;
+    }
+}
