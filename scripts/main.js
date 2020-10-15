@@ -18,7 +18,7 @@ const createProjectCards = (url) => {
         });
     });
 }
-
+  
 window.addEventListener('load', () => {
     createProjectCards('https://portafolio-12481.firebaseio.com/projects/cards.json');
 });
