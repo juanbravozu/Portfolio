@@ -66,8 +66,8 @@ class ProjectCard {
 
         cardWrap.style.transform = `perspective(600px) rotateY( ${x * 10}deg) rotateX(${y * -10}deg)`;
         targetThumbnail.style.transform = `translate(-${50 + (x * -2)}%, -${50 + (y * -2)}%)`;
-        targetAnimation.style.left = (50 + (x * -4)) + '%';
-        targetAnimation.style.top = (50 + (y * -4)) + '%';
+        targetAnimation.style.left = (50 + (x * 5)) + '%';
+        targetAnimation.style.top = (50 + (y * 5)) + '%';
     }
 
     mouseLeaveHandler(event) {
