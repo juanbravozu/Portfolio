@@ -16,7 +16,7 @@ class ProjectCard {
         
         const animationImg = document.createElement('img');
         animationImg.setAttribute('src', this.data.animation);
-        animationImg.classList.add('project__animation');
+        animationImg.classList.add('project__animation', 'lazy');
         cardWrap.appendChild(animationImg);
 
         const thumbnailContainer = document.createElement('div');
@@ -25,6 +25,7 @@ class ProjectCard {
 
         const thumbnailImg = document.createElement('img');
         thumbnailImg.setAttribute('src', this.data.thumbnail);
+        thumbnailImg.classList.add('lazy');
         thumbnailContainer.appendChild(thumbnailImg);
 
         const projectInfo = document.createElement('div');
@@ -63,8 +64,8 @@ class ProjectCard {
         const x = (event.offsetX/width) - 0.5; 
         const y = (event.offsetY/height) - 0.5;
 
-        cardWrap.style.transform = 'perspective(600px) rotateY(' + (x * 10) + 'deg) rotateX(' + (y * -10) +'deg)';
-        targetThumbnail.style.transform = 'translate(-' + (50 + (x * -2)) + '%, -' + (50 + (y * -2)) + '%)';
+        cardWrap.style.transform = `perspective(600px) rotateY( ${x * 10}deg) rotateX(${y * -10}deg)`;
+        targetThumbnail.style.transform = `translate(-${50 + (x * -2)}%, -${50 + (y * -2)}%)'`;
         targetAnimation.style.left = (50 + (x * -4)) + '%';
         targetAnimation.style.top = (50 + (y * -4)) + '%';
     }
