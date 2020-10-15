@@ -65,7 +65,7 @@ class ProjectCard {
         const y = (event.offsetY/height) - 0.5;
 
         cardWrap.style.transform = `perspective(600px) rotateY( ${x * 10}deg) rotateX(${y * -10}deg)`;
-        targetThumbnail.style.transform = `translate(-${50 + (x * -2)}%, -${50 + (y * -2)}%)'`;
+        targetThumbnail.style.transform = `translate(-${50 + (x * -2)}%, -${50 + (y * -2)}%)`;
         targetAnimation.style.left = (50 + (x * -4)) + '%';
         targetAnimation.style.top = (50 + (y * -4)) + '%';
     }
