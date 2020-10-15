@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+@mixin  h2 {
+    font-family: $montserrat;
+    font-weight: $bold;
+    font-size: 36px;
+}
+
 @mixin h3 {
     font-family: $montserrat;
     font-weight: $medium;
