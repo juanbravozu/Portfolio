@@ -10,6 +10,8 @@ header {
     & img {
         margin-left: 13%;
         height: 900px;
+        margin-top: 50px;
+        
     }
 
     & div {
@@ -20,9 +22,7 @@ header {
         color: $white;
 
         & h1 {
-            font-family: $montserrat;
-            font-weight: $bold;
-            font-size: 72px;
+            @include h1;
         }
         
         & h3 {

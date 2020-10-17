@@ -13,20 +13,24 @@ class ProjectCard {
         const cardWrap = document.createElement('div');
         cardWrap.classList.add('project__wrap');
         container.appendChild(cardWrap); 
-        
-        const animationImg = document.createElement('img');
-        animationImg.setAttribute('src', this.data.animation);
-        animationImg.classList.add('project__animation', 'lazy');
-        cardWrap.appendChild(animationImg);
+
+        const imageContainer = document.createElement('div');
+        imageContainer.classList.add('project__imageContainer');
+        cardWrap.appendChild(imageContainer);
 
         const thumbnailContainer = document.createElement('div');
         thumbnailContainer.classList.add('project__thumbnail');
-        cardWrap.appendChild(thumbnailContainer);
+        imageContainer.appendChild(thumbnailContainer);
 
         const thumbnailImg = document.createElement('img');
         thumbnailImg.setAttribute('src', this.data.thumbnail);
-        thumbnailImg.classList.add('lazy');
+        thumbnailImg.classList.add('project__img');
         thumbnailContainer.appendChild(thumbnailImg);
+
+        const animationImg = document.createElement('img');
+        animationImg.setAttribute('src', this.data.animation);
+        animationImg.classList.add('project__animation');
+        imageContainer.appendChild(animationImg);
 
         const projectInfo = document.createElement('div');
         projectInfo.classList.add('project__info');

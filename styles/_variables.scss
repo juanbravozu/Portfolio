@@ -5,22 +5,28 @@
     align-items: center;
 }
 
+@mixin h1 {
+    font-family: $montserrat;
+    font-weight: $bold;
+    font-size: 2em;
+}
+
 @mixin  h2 {
     font-family: $montserrat;
     font-weight: $bold;
-    font-size: 36px;
+    font-size: 1em;
 }
 
 @mixin h3 {
     font-family: $montserrat;
     font-weight: $medium;
-    font-size: 24px;
+    font-size: 0.66em;
 }
 
 @mixin p {
     font-family: $poppins;
     font-weight: $regular;
-    font-size: 18px;
+    font-size: 0.5em;
 }
 
 //Colors

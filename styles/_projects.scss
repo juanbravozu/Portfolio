@@ -22,7 +22,7 @@
 
         &__animation {
             position: absolute;
-
+            width: 140%;
             left: 50%;
             top: 232px;
             z-index: 3;
@@ -47,6 +47,10 @@
             }
         }
 
+        &__imageContainer {
+            position: relative;
+        }
+
         &__thumbnail {
             position: relative;
 
@@ -54,15 +58,16 @@
             padding-bottom: 96%;
             overflow: hidden;
             pointer-events: none;
+        }
 
-            & img {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                transition-duration: .4s;
-                transition-timing-function: ease-out;
-            }
+        &__img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 125%;
+            transform: translate(-50%, -50%);
+            transition-duration: .4s;
+            transition-timing-function: ease-out;
         }
 
         &:hover {
