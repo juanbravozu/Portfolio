@@ -9,8 +9,7 @@ const createProjectCards = (url) => {
     fetch(url)
     .then(response => response.json())
     .then(projects => {
-        projectsData = projects
-        console.log(projectsData);
+        projectsData = projects;
         
         const projectsContainer = document.querySelector('.projects');
 

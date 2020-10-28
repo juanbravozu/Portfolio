@@ -10,7 +10,7 @@ const modalBehavior = () => {
 
     form.addEventListener('submit', (event) => {
         event.preventDefault();
-        
+        console.log(event);
     });
 
     const openModal = () => {

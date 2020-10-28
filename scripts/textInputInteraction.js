@@ -15,9 +15,27 @@ const textInputInteraction = () => {
         });
 
         input.addEventListener('blur', () => {
-            if(input.value.trim()=='') {
+            const errorMsg = container.querySelector('.textInput__error');
+            if(input.getAttribute('type') == 'email') {
+                if(input.checkValidity()) {
+                    container.classList.remove('textInput--hasError');
+                    errorMsg.innerText = '';
+                } else if(input.value.trim()=='') {
+                    container.classList.remove('textInput--active');
+                    container.classList.add('textInput--hasError');
+                    errorMsg.innerHTML = "This field is required";
+                } else {
+                    container.classList.add('textInput--hasError');
+                    errorMsg.innerText = 'Please enter a valid e-mail address';
+                }
+            } else if(input.value.trim()=='') {
                 container.classList.remove('textInput--active');
-            }            
+                container.classList.add('textInput--hasError');
+                errorMsg.innerHTML = "This field is required";
+            } else { 
+                container.classList.remove('textInput--hasError');
+                errorMsg.innerText = '';
+            }   
         });
 
         const limitTextarea = (event) => {
@@ -31,6 +49,12 @@ const textInputInteraction = () => {
         if(isTextarea) {
             input.addEventListener('input', limitTextarea);
             input.addEventListener('paste', limitTextarea);
+            input.addEventListener('keypress', (event) => { 
+                if(event.key == 'Enter') {
+                    event.preventDefault();
+                    input.value += "\n";
+                }
+            });
 
             const textArea = container.querySelector('.textInput__textarea');
             textArea.addEventListener('click', () => { input.focus() });
