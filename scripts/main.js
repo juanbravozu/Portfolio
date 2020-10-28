@@ -1,5 +1,7 @@
 import animateSplash from './animations';
+import modalBehavior from './modalBehavior';
 import ProjectCard from './projectCard';
+import textInputInteraction from './textInputInteraction';
 
 let projectsData = {};
 
@@ -21,5 +23,7 @@ const createProjectCards = (url) => {
 
 window.addEventListener('load', () => {
     createProjectCards('https://portafolio-12481.firebaseio.com/projects/cards.json');
+    textInputInteraction();
+    modalBehavior();
     animateSplash();
 });

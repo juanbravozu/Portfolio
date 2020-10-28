@@ -1,0 +1,26 @@
+.btn {
+    position: relative;
+    width: 100%;
+    max-width: 280px;
+    height: 46px;
+    @include p;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &--yellow {
+        color: $white;
+        background: linear-gradient(170deg, $yellow 13.87%, $darkYellow 95.09%);
+        box-shadow: 0px 5px 25px rgba(250, 169, 22, 0.45);
+        transition: box-shadow .2s ease-out;
+
+        &:hover {
+            background: linear-gradient(170deg, lighten($yellow, 5%) 13.87%, lighten($darkYellow, 5%) 95.09%);
+            box-shadow: 0px 8px 15px rgba(250, 169, 22, 0.55);
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

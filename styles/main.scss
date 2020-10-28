@@ -2,6 +2,9 @@
 @import './navBar';
 @import './header';
 @import './projects';
+@import './modal';
+@import './textInput';
+@import './button';
 
 * {
     margin: 0;
@@ -80,4 +83,8 @@ footer {
     background-color: $black;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+}
+
+button:focus {
+    outline: none;
 }

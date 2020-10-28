@@ -15,6 +15,46 @@
         <img class="splash__logo" src="./images/logo_white.svg" alt="Logo">
     </div>
  
+    <div class="modal">
+        <div class="modal__container">
+            <img src="./images/close_icon.svg" alt="Close">
+
+            <div class="modal__header">
+                <h2>Hi!</h2>
+                <p>I'll get back to you as soon as possible</p>
+            </div>            
+
+            <form id="contactForm" action="" method="post" autocomplete="off">
+                
+                <div class="modal__inputs">
+                    <div class="textInput">
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                    </div>
+    
+                    <div class="textInput">
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                    </div>
+    
+                    <div class="textInput">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject">
+                    </div>
+    
+                    <div class="textInput textInput--textarea">
+                        <label for="message">Message</label>
+                        <div class="textInput__textarea"></div>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <p class="textInput__indicator">600/600</p>
+                    </div>
+                </div>                
+
+                <button class="btn btn--yellow">Send</button>
+            </form>
+        </div>
+    </div>
+
     <nav class="col-12">
         <ul class="links col-3">
             <li>
@@ -26,7 +66,7 @@
             </li>
 
             <li>
-                <p href="" class="links__a">Contact</p>
+                <p href="" class="links__a" id="contact__nav">Contact</p>
             </li>
         </ul>
 
@@ -69,7 +109,7 @@
 
     <footer>
         <h2>¿Want to speak with me?</h2>
-        <h3>Send me an <span>email</span></h3>
+        <h3>Send me an <span class="contact__footer">email</span></h3>
     </footer>
 
     <button class="contactBtn">

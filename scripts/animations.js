@@ -1,8 +1,7 @@
 import gsap from 'gsap';
 
-const timeLine = gsap.timeline({ defaults: { ease: 'power1.out', duration: .5}});
-
 const animateSplash = function() {
+    const timeLine = gsap.timeline({ defaults: { ease: 'power1.out', duration: .5}});
     timeLine.to('body', { height: '100vh', overflow: 'hidden', duration: 0 });
     timeLine.to('.splash__logo', { scale: 1.3, transformOrigin: '50% 50%'});
     timeLine.to('.splash__logo', { scale: 1, transformOrigin: '50% 50%'});
