@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/juanbravozu/Portfolio#readme",
   "dependencies": {
+    "firebase": "^8.0.1",
     "gsap": "^3.5.1",
     "vanilla-lazyload": "^17.1.2"
   },
