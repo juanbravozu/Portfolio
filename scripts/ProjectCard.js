@@ -1,8 +1,9 @@
 class ProjectCard {
 
-    constructor(data, root) {
+    constructor(data, index, root) {
         this.data = data;
         this.root = root;
+        this.index = index;
     }
 
     createCard() {
@@ -48,7 +49,7 @@ class ProjectCard {
         container.addEventListener('mouseleave', this.mouseLeaveHandler);
         container.addEventListener('mouseenter', this.mouseEnterHandler);
         container.addEventListener('click', () => {
-            window.open(this.data.link, '_blank');
+            window.location.href = './project.html?id='+this.index;
         });
     }
 

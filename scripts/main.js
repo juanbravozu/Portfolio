@@ -13,8 +13,8 @@ const createProjectCards = (url) => {
         
         const projectsContainer = document.querySelector('.projects');
 
-        projectsData.forEach(data => {
-            const projectCard = new ProjectCard(data, projectsContainer);
+        projectsData.forEach((data, index) => {
+            const projectCard = new ProjectCard(data, index, projectsContainer);
             projectCard.createCard();
         });
     });
