@@ -1,24 +1,24 @@
 header {
     position: relative;
     display: flex;
-
+    align-items: center;
     width: 100%;
     min-height: 1183px;
 
     background-image: url('../images/header_bg.svg');
 
     & img {
-        margin-left: 13%;
-        height: 900px;
-        margin-top: 50px;
+        position: absolute;
+        left: 13%;
+        height: 700px;
+        top: 150px;
         
     }
 
     & div {
-        position: absolute;
-
-        left: 50%;
-        margin-top: 370px;
+        position: relative;
+        left: 41.66%;
+        transform: translateY(-50%);
         color: $white;
 
         & h1 {

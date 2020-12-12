@@ -103,3 +103,27 @@ $large: 992px;
         width: 100%;
     }
 }
+
+@media(max-width: $large) and (min-width: $medium) {
+    .col {
+        &-3 {
+            width: 40%;
+        }
+    }
+}
+
+@media(max-width: $medium) and (min-width: $small) {
+    .col {
+        &-3 {
+            width: 40%;
+        }
+    }
+}
+
+@media(max-width: $small) {
+    .col {
+        &-3 {
+            width: 100%;
+        }
+    }
+}

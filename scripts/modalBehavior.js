@@ -45,7 +45,7 @@ const modalBehavior = () => {
             let date = new Date().toISOString().split('T')[0]+"_"+new Date().toISOString().split('T')[1].slice(0, 8);
             db.collection('messages').doc(date).set(dataJson)
             .then(() => {
-                closeModal();
+                messageModal();
             });
 
             
@@ -53,6 +53,8 @@ const modalBehavior = () => {
     });
 
     const openModal = () => {
+        const modal = document.querySelector('.modal__container');
+        modal.classList.remove('modal--message');
         const timeline = gsap.timeline({ defaults: { ease: 'power1.out', duration: .3}});
         timeline.to('.modal', { display: 'flex', duration: 0 });
         timeline.to('.modal', { opacity: 1 });
@@ -74,8 +76,13 @@ const modalBehavior = () => {
         timeline.to('.modal', { display: 'none', duration: 0 });
     }
 
+    const messageModal = () => {
+        const modal = document.querySelector('.modal__container');
+        modal.classList.add('modal--message');
+    }
+
     contactFormBtn.addEventListener('click', openModal);
-    contactFormBanner.addEventListener('click', openModal);
+    if(contactFormBanner) contactFormBanner.addEventListener('click', openModal);
     contactFormNav.addEventListener('click', openModal);
 
     closeBtn.addEventListener('click', closeModal);

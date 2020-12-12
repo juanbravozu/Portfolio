@@ -1,14 +1,14 @@
 .projects {
     position: relative;
     display: flex;
-    padding: 0 15%;
+    padding: 0 10%;
+    margin: 50px 0;
     justify-content: space-between;
-
     flex-wrap: wrap;
 
     .project {
         position: relative;
-        margin: 50px;
+        margin: 33px;
         cursor: pointer;
 
         &__wrap {
@@ -42,10 +42,12 @@
 
             & h3 {
                 @include h3;
+                font-size: 1.5vw;
             }
 
             & p {
                 @include p;
+                font-size: 1.3vw;
             }
         }
 
@@ -79,6 +81,26 @@
                 &__animation {
                     opacity: 1;
                     transform: translate(-50%, -50%) scale(1);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $large) {
+    .projects {
+        padding: 3% 10%;
+        
+        & .project {
+            margin: 30px 15px;
+
+            &__info {
+                & h3 {
+                    font-size: 0.5em;
+                }
+
+                & p {
+                    font-size: 0.4em;
                 }
             }
         }

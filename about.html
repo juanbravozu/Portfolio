@@ -3,12 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Juan Bravo</title>
 </head>
 <body>
+    <div class="modal">
+        <div class="modal__container">
+            <img src="./images/close_icon.svg" alt="Close">
+
+            <div class="modal__header">
+                <h2>Hi!</h2>
+                <p>I'll get back to you as soon as possible</p>
+            </div>            
+
+            <form id="contactForm" action="" method="post" autocomplete="off">
+                
+                <div class="modal__inputs">
+                    <div class="textInput">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                        <p class="textInput__error"></p>
+                    </div>
     
-    <script>
-        window.alert('En proceso de construcción');
-    </script>
+                    <div class="textInput">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                        <p class="textInput__error"></p>
+                    </div>
+    
+                    <div class="textInput">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required>
+                        <p class="textInput__error"></p>
+                    </div>
+    
+                    <div class="textInput textInput--textarea">
+                        <label for="message">Message</label>
+                        <div class="textInput__textarea"></div>
+                        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                        <p class="textInput__indicator">600/600</p>
+                        <p class="textInput__error"></p>
+                    </div>
+                </div>                
+
+                <button class="btn btn--yellow">Send</button>
+            </form>
+
+            <h1 class="modal__message">Thanks for getting in touch, you'll hear from me soon</h1>
+        </div>
+    </div>
+
+    <nav class="col-12">
+        <ul class="links col-3">
+            <li>
+                <a href="./#work" class="links__a">Work</a>
+            </li>
+
+            <li>
+                <a href="./about.html" class="links__a">About</a>
+            </li>
+
+            <li>
+                <p class="links__a" id="contact__nav">Contact</p>
+            </li>
+        </ul>
+
+        <a class="col-2 logo" href="./">
+            <div class="logo__right">
+                <img src="./images/logo/right__forward.svg" alt="" class="forward">
+                <img src="./images/logo/right__back.svg" alt="" class="back">
+            </div>
+            <div class="logo__left">
+                <img src="./images/logo/left__forward.svg" alt="" class="forward">
+                <img src="./images/logo/left__back.svg" alt="" class="back">
+            </div>
+            <h1 class="logo__text">BRAVO</h1>
+        </a>
+
+        <ul class="social col-2">
+            <li>
+                <a href="https://www.linkedin.com/in/juanbravozu/" target="_blank">
+                    <img src="./images/linkedin_icon.svg" alt="LinkedIn">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/juanbravozu" target="_blank">
+                    <img src="./images/github_icon.svg" alt="Github">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.behance.net/juanbravozu" target="_blank">
+                    <img src="./images/behance_icon.svg" alt="Behance">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="about">
+        <div class="col-5">
+            <h1>So, Who am I?</h1>
+
+            <p>I’m a UX/UI designer and front end developer based in Cali, Colombia. I’m passionate about learning and naturally curious.</p>
+            
+            <p>My knowledge in design complements my coding skills, as it allows me to make both visually appealing and usable web products. Also, it helps me to work better in an interdisciplinary team.</p>
+                
+            <p>Finally, I’m a videogame and movie lover, and a rock climber who loves adventure.</p>
+        </div>
+
+        <img src="./images/about_bg.png" alt="">
+    </section>
+
+    <button class="contactBtn">
+        <img src="./images/email_icon.svg" alt="">
+    </button>
+
+    <script src="./scripts/about.js"></script>
 </body>
 </html>

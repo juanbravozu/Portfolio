@@ -47,6 +47,9 @@ class ProjectCard {
         container.addEventListener('mousemove', this.mouseMoveHandler);
         container.addEventListener('mouseleave', this.mouseLeaveHandler);
         container.addEventListener('mouseenter', this.mouseEnterHandler);
+        container.addEventListener('click', () => {
+            window.open(this.data.link, '_blank');
+        });
     }
 
     mouseEnterHandler(event) {
