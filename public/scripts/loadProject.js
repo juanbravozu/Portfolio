@@ -15,5 +15,3 @@ const loadProject = () => {
         });
     });
 }
-
-export default loadProject;

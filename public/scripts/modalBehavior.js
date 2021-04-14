@@ -1,4 +1,4 @@
-const modalBehavior = () => {
+define(() => {
     const form = document.querySelector('form');
     const inputContainers = document.querySelectorAll('.textInput');
     const contactFormBtn = document.querySelector('.contactBtn');
@@ -33,9 +33,6 @@ const modalBehavior = () => {
     const openModal = () => {
         const modal = document.querySelector('.modal__container');
         modal.classList.remove('modal--message');
-        const timeline = gsap.timeline({ defaults: { ease: 'power1.out', duration: .3}});
-        timeline.to('.modal', { display: 'flex', duration: 0 });
-        timeline.to('.modal', { opacity: 1 });
     }
 
     const closeModal = () => {
@@ -60,6 +57,4 @@ const modalBehavior = () => {
     contactFormNav.addEventListener('click', openModal);
 
     closeBtn.addEventListener('click', closeModal);
-}
-
-module.exports = modalBehavior;
+});

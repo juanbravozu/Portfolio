@@ -1,4 +1,4 @@
-const textInputInteraction = () => {
+define(() => {
 
     const textInputContainers = document.querySelectorAll('.textInput');
 
@@ -60,6 +60,4 @@ const textInputInteraction = () => {
             textArea.addEventListener('click', () => { input.focus() });
         }
     });
-}
-
-module.exports = textInputInteraction;
+});
