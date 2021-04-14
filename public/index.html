@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/main.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <title>Juan Bravo</title>
@@ -50,19 +50,17 @@
 
                 <button class="btn btn--yellow">Send</button>
             </form>
-
-            <h1 class="modal__message">Thanks for getting in touch, you'll hear from me soon</h1>
         </div>
     </div>
 
     <nav class="col-12">
         <ul class="links col-3">
             <li>
-                <a href="./#work" class="links__a">Work</a>
+                <a href="#work" class="links__a">Work</a>
             </li>
 
             <li>
-                <a href="./about.html" class="links__a">About</a>
+                <a href="/about.html" class="links__a">About</a>
             </li>
 
             <li>
@@ -70,7 +68,7 @@
             </li>
         </ul>
 
-        <a class="col-2 logo" href="./">
+        <a class="col-2 logo" href="#">
             <div class="logo__right">
                 <img src="./images/logo/right__forward.svg" alt="" class="forward">
                 <img src="./images/logo/right__back.svg" alt="" class="back">
@@ -101,24 +99,30 @@
         </ul>
     </nav>
 
-    <section class="about">
-        <div class="col-5">
-            <h1>So, Who am I?</h1>
+    <header>
+        <img src="./images/me_picture.png" alt="Me" class="header__img">
 
-            <p>I’m a UX/UI designer and front end developer based in Cali, Colombia. I’m passionate about learning and naturally curious.</p>
-            
-            <p>My knowledge in design complements my coding skills, as it allows me to make both visually appealing and usable web products. Also, it helps me to work better in an interdisciplinary team.</p>
-                
-            <p>Finally, I’m a videogame and movie lover, and a rock climber who loves adventure.</p>
+        <div>
+            <h1 class="text--h1">HI!</h1>
+            <h1 class="text--h1">I'm Juan David</h1>
+            <h3 class="text--h3">AKA Bravo</h3>
+            <p class="text--p">I’m an UX/UI designer and front-end developer with a passion for challenges and learning new things.</p>
         </div>
+    </header>
 
-        <img src="./images/about_bg.png" alt="">
+    <section class="projects" id="work">
     </section>
+
+    <footer>
+        <h2>¿Want to speak with me?</h2>
+        <h3>Send me an <span class="contact__footer">email</span></h3>
+    </footer>
 
     <button class="contactBtn">
         <img src="./images/email_icon.svg" alt="">
     </button>
 
-    <script src="./scripts/about.js"></script>
+
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

@@ -62,4 +62,4 @@ const textInputInteraction = () => {
     });
 }
 
-export default textInputInteraction;
+module.exports = textInputInteraction;

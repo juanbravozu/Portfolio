@@ -4,7 +4,8 @@
   "description": "Personal portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -17,11 +18,13 @@
   },
   "homepage": "https://github.com/juanbravozu/Portfolio#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
     "firebase": "^8.0.1",
-    "gsap": "^3.5.1",
-    "vanilla-lazyload": "^17.1.2"
+    "gsap": "^3.6.1"
   },
   "devDependencies": {
+    "nodemon": "^2.0.7",
     "sass": "^1.26.11"
   }
 }

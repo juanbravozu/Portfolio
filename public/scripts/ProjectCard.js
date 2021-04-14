@@ -91,4 +91,4 @@ class ProjectCard {
     }
 }
 
-export default ProjectCard;
+module.exports = ProjectCard;

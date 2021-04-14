@@ -1,7 +1,6 @@
-import animateSplash from './animations';
-import modalBehavior from './modalBehavior';
-import ProjectCard from './projectCard';
-import textInputInteraction from './textInputInteraction';
+const modalBehavior = require('./modalBehavior');
+const ProjectCard = require('./projectCard');
+const textInputInteraction = require('./textInputInteraction');
 
 let projectsData = {};
 
